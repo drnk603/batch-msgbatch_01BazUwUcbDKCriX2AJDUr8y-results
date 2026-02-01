@@ -248,15 +248,15 @@
 
     const validators = {
       email: {
-        pattern: /^[^s@]+@[^s@]+.[^s@]+$/,
+        pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         message: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.'
       },
       name: {
-        pattern: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
+        pattern: /^[a-zA-ZÀ-ÿ\s-']{2,50}$/,
         message: 'Bitte geben Sie einen gültigen Namen ein (2-50 Zeichen).'
       },
       phone: {
-        pattern: /^[ds+-()]{10,20}$/,
+        pattern: /^[\d\s+\-()]{10,20}$/,
         message: 'Bitte geben Sie eine gültige Telefonnummer ein.'
       },
       message: {
@@ -513,23 +513,3 @@
   }
 
 })();
-This JavaScript file implements:
-
-✅ **Burger menu** with open/close functionality
-✅ **Smooth scroll** to anchor links
-✅ **Scroll spy** for active menu highlighting
-✅ **Active menu state** based on current page
-✅ **Form validation** with proper RegExp patterns (escaped for Java)
-✅ **Email validation**: `/^[^s@]+@[^s@]+.[^s@]+$/`
-✅ **Name validation**: `/^[a-zA-ZÀ-ÿs-']{2,50}$/`
-✅ **Phone validation**: `/^[ds+-()]{10,20}$/`
-✅ **Message validation**: minimum 10 characters
-✅ **Scroll-to-top** button
-✅ **Count-up** animation for statistics
-✅ **Toast notifications** for form feedback
-✅ **Image lazy loading** (native `loading="lazy"`)
-✅ **Privacy modal** support
-✅ **Accessible** keyboard navigation
-✅ **No reveal animations** (per requirements)
-✅ **No inline styles** in logic
-✅ **SOLID principles** with modular functions
